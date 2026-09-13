@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bhajan Sangrah</title>
+<meta name="description" content="A songbook of bhajans, lyrics ready to sing along." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-head">
+    <h1 class="site-title">Bhajan Sangrah</h1>
+    <p class="site-tagline">A songbook to sing along to</p>
+  </header>
+
+  <div id="gridView" class="grid-view">
+    <div class="search-row">
+      <input id="searchInput" type="text" placeholder="Find a bhajan by name…" aria-label="Search bhajans" />
+    </div>
+    <div id="categories"></div>
+  </div>
+
+  <div id="detailView" class="detail">
+    <button id="backLink" class="back-link">&larr; Back to all bhajans</button>
+    <div class="detail-band"></div>
+    <h2 id="detailTitle" class="detail-title"></h2>
+    <p id="detailCategory" class="detail-category"></p>
+    <div id="detailLyrics" class="lyrics"></div>
+    <p id="detailNotice" class="notice" style="display:none;"></p>
+  </div>
+
+  <footer class="site-foot">
+    <p>musicwithviveksg &middot; Singapore's Dholak Player</p>
+  </footer>
+
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
